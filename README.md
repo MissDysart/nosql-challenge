@@ -9,10 +9,12 @@ Contracted by the fictitious magazine, "Eat Safe, Love" to help evaluate UK esta
 
 ### Part 1: Database and Jupyter Notebook Set Up
 
-* Import the data from `establishments.json` to MongoDB Compass. The following code was used in the terminal:
+(Note: `NoSQL_setup.ipynb` shows outputs that are out of order. This is due to changes made to the code after dropping all the 'Dover' documents.)
+* Import data from `establishments.json` to MongoDB Compass. The following code was used in the terminal:
     * `mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json`
 * In the Jupyter notebook file `NoSQL_setup`, import PyMongo and Pretty Print. Then create an instance of Mongo Client.
 * Check that database created and loaded correctly with the functions `list_database_names`, `list_collection_names`, and `find_one`.
+* Check the data types for the coordinates and 'RatingValue'.
 
 ### Part 2: Update the Database
 
